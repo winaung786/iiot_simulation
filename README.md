@@ -45,40 +45,51 @@ Follow these steps to run the sensor simulation and visualization:
 **Windows:**
 ```bash
 venv\Scripts\activate
+```
 
-macOS / Linux:
+**macOS / Linux:**
+```bash
 source venv/bin/activate
+```
 
-Start the MQTT Broker
+---
+
+### 🔹 2. Start the MQTT Broker
+
 Open a new terminal and run:
+```bash
 mosquitto
+```
 Make sure Mosquitto is installed. Download: https://mosquitto.org/download
 
-Run Sensor Simulations (Each in Separate Terminals)
-MQTT Simulation
+---
 
-bash
-Copy
-Edit
+### 🔹 3. Run Sensor Simulations (Each in Separate Terminals)
+
+**MQTT Simulation**
+```bash
 python mqtt_sensor_simulation.py
-CoAP Simulation
+```
 
-bash
-Copy
-Edit
+**CoAP Simulation**
+```bash
 python coap_sensor_simulation.py
-OPC UA Simulation
+```
 
-bash
-Copy
-Edit
+**OPC UA Simulation**
+```bash
 python opcua_sensor_simulation.py
-🔹 4. Run the Data Visualization Script
-In a new terminal (with virtual environment activated):
+```
 
-bash
-Copy
-Edit
+---
+
+### 🔹 4. Run the Data Visualization Script
+
+In a new terminal (with virtual environment activated):
+```bash
 python data_visualization.py
+```
+
 You will see a live plot showing Temperature and Humidity from the MQTT simulation.
+
 
